@@ -1,10 +1,8 @@
 # GettingData
 Project Submission for Getting and Cleaning Data
 
-Code Book
-=================
-
 run_analysis.R
+The UCI HAR Dataset must be extracted to the working directory.
 
 Process:
 
@@ -34,6 +32,8 @@ Process:
 
 13. Write my_summary to "tidy_summary.txt"
 
+Code Book
+=================
 
 Features
 =================
