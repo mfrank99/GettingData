@@ -2,6 +2,7 @@
 Project Submission for Getting and Cleaning Data
 
 run_analysis.R
+
 The UCI HAR Dataset must be extracted to the working directory.
 
 Process:
