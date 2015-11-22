@@ -7,18 +7,31 @@ Code Book
 run_analysis.R
 
 Process:
+
 1. Gets the variable names from Features.txt, storing in data_header data frame.
+
 2. Strip charachters which cause conflicts in variable names: "," and "()"
+
 3. Read the list of activity names, storing in data_activities
+
 4. Get training data set, storing in train_data, using data_header for column names.
+
 5. Get training subject list, storing in train_subjects
+
 6. Get training activities,  storing "id" and activity name in train_activities.
+
 7. Merge subject id, activity name, and training observations, storing in data frame: my_data1
+
 8. Repeat steps 4-6 storing in test_data, test_subjects, test_activity.
+
 9. Merge subject id, activity name, and test observations, storing in data frame: my_data2
+
 10. Merge training and testing data, storing in data frame: my_data
+
 11. Calculate averages by subject and activity, using dplyr, storing in my_summary
+
 12. Write my_data to "tidy_data.txt"
+
 13. Write my_summary to "tidy_summary.txt"
 
 
@@ -48,12 +61,15 @@ These signals were used to estimate variables of the feature vector for
 each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-==================
-Added to data set from original
-subject		The id of the test subject creating the observations
-activity	The activity name for each activity being observed
-==================
 
+Added to data set from original
+==================
+subject		The id of the test subject creating the observations
+
+activity	The activity name for each activity being observed
+
+From original data set
+==================
 tBodyAcc.std.XYZ
 tGravityAcc.std.XYZ
 tBodyAccJerk.std.XYZ
